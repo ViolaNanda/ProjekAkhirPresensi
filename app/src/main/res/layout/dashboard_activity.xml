@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF6E6"
@@ -7,53 +8,53 @@
     android:gravity="center_horizontal">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/dashboard_image"
-        android:contentDescription="@string/dashboard_image" />
+        android:id="@+id/imageView2"
+        android:layout_width="318dp"
+        android:layout_height="314dp"
+        app:srcCompat="@drawable/present" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
         android:text="Kamu Telah Login!!"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:paddingTop="16dp" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_checkin"
-        android:layout_width="match_parent"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:text="PRESENSI MASUK"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#6A1B9A"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="16dp" />
+        android:text="PRESENSI MASUK"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn_checkout"
-        android:layout_width="match_parent"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:text="PRESENSI PULANG"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#9C27B0"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="8dp" />
+        android:text="PRESENSI PULANG"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn_attendance_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RIWAYAT KEHADIRAN"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#8E24AA"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="8dp" />
+        android:text="RIWAYAT KEHADIRAN"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tv_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sekarang Pukul: 06.30"
         android:gravity="center"
-        android:paddingTop="16dp" />
+        android:paddingTop="16dp"
+        android:text="Sekarang Pukul: 06.30" />
 
 </LinearLayout>
