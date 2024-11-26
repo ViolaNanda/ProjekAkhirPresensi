@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Lengkap"
-            android:drawableStart="@drawable/ic_user"
+            android:drawableStart="@drawable/user"
             android:padding="12dp"
             android:background="@drawable/rounded_edittext" />
 

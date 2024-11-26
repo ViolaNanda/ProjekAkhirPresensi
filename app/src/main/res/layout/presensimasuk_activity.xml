@@ -48,7 +48,7 @@
                 android:layout_height="64dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/circle_button_background"
-                app:srcCompat="@drawable/galerii" />
+                app:srcCompat="@drawable/addimages" />
 
             <ImageButton
                 android:id="@+id/btn_location"
@@ -63,7 +63,7 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circle_button_background"
-                app:srcCompat="@drawable/camera"
+                app:srcCompat="@drawable/addcamera"
                 android:layout_margin="8dp" />
 
         </LinearLayout>
