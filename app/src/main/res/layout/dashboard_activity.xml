@@ -22,27 +22,38 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_checkin"
-        android:layout_width="141dp"
+    <!-- LinearLayout Horizontal untuk tombol -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#6A1B9A"
-        android:text="PRESENSI MASUK"
-        android:textColor="#FFFFFF" />
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btn_checkout"
-        android:layout_width="144dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#9C27B0"
-        android:text="PRESENSI PULANG"
-        android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btn_checkin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#6A1B9A"
+            android:text="PRESENSI MASUK"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#9C27B0"
+            android:text="PRESENSI PULANG"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_attendance_history"
-        android:layout_width="144dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:backgroundTint="#8E24AA"

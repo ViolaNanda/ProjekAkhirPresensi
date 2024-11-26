@@ -52,21 +52,21 @@
             android:background="@drawable/rounded_edittext"
             android:layout_marginTop="12dp" />
 
-        <EditText
-            android:id="@+id/et_password"
+        <!-- Menggunakan TextInputLayout untuk password dengan ikon mata -->
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:background="@drawable/rounded_edittext"
-            android:drawableStart="@drawable/ic_password"
             android:hint="Password"
-            android:padding="12dp" />
+            app:endIconMode="password_toggle"
+            app:passwordToggleTint="@color/colorPrimary">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="49dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/mata" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_signup"
