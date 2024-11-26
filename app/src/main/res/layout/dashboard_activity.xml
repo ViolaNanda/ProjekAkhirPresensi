@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/btn_checkin"
-        android:layout_width="383dp"
+        android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#6A1B9A"
@@ -33,7 +33,7 @@
 
     <Button
         android:id="@+id/btn_checkout"
-        android:layout_width="383dp"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:backgroundTint="#9C27B0"
@@ -42,19 +42,11 @@
 
     <Button
         android:id="@+id/btn_attendance_history"
-        android:layout_width="match_parent"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:backgroundTint="#8E24AA"
         android:text="RIWAYAT KEHADIRAN"
         android:textColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/tv_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:text="Sekarang Pukul: 06.30" />
 
 </LinearLayout>
