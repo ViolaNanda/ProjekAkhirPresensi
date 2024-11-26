@@ -40,16 +40,14 @@
             android:hint="Nama Lengkap"
             android:drawableStart="@drawable/user"
             android:padding="12dp"
-            android:background="@drawable/rounded_edittext" />
 
         <EditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:drawableStart="@drawable/ic_email"
+            android:drawableStart="@drawable/email"
             android:padding="12dp"
-            android:background="@drawable/rounded_edittext"
             android:layout_marginTop="12dp" />
 
         <!-- Menggunakan TextInputLayout untuk password dengan ikon mata -->
