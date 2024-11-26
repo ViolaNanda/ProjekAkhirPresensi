@@ -1,41 +1,102 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#FFF6E6"
     android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imgOutput"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_placeholder" />
-
-    <Button
-        android:id="@+id/btnGallery"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pilih dari Galeri" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btnCamera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ambil Foto" />
+        <!-- Header dengan Judul -->
+        <TextView
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#8E24AA"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Presensi Pulang"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etKeterangan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Isi Keterangan"
-        android:layout_marginTop="16dp" />
+        <!-- Gambar Ilustrasi -->
+        <ImageView
+            android:layout_width="318dp"
+            android:layout_height="314dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/present" />
 
-    <Button
-        android:id="@+id/btnKirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kirim"
-        android:layout_marginTop="16dp" />
-</LinearLayout>
+        <!-- LinearLayout untuk Ikon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Tombol Pilih Gambar -->
+
+            <ImageButton
+                android:id="@+id/btn_gallery"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/circle_button_background"
+                app:srcCompat="@drawable/galerii" />
+
+            <ImageButton
+                android:id="@+id/btn_location"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circle_button_background"
+                app:srcCompat="@drawable/addloc"
+                android:layout_margin="8dp" />
+
+            <ImageButton
+                android:id="@+id/btn_camera"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circle_button_background"
+                app:srcCompat="@drawable/camera"
+                android:layout_margin="8dp" />
+
+        </LinearLayout>
+
+        <!-- Gambar Output -->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_background"
+            android:contentDescription="Output Gambar" />
+
+        <!-- Text Keterangan -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Keterangan"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColorHint="#000000"
+            android:inputType="text" />
+
+        <!-- Tombol Kirim -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:text="KIRIM"
+            android:backgroundTint="#8E24AA"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

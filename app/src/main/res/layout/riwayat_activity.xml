@@ -1,12 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#FAF4FF"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Kehadiran"
+        android:textColor="#6E56CF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Illustration -->
+
+    <!-- Title List Riwayat -->
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="282dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Illustration"
+        android:src="@drawable/present" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Riwayat"
+        android:textColor="#6E56CF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Table Layout -->
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginBottom="16dp">
+
+        <!-- Header Row -->
+        <TableRow android:background="#EEEAF4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TANGGAL"
+                android:gravity="center"
+                android:textColor="#6E56CF"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="JAM MASUK"
+                android:gravity="center"
+                android:textColor="#6E56CF"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="JAM PULANG"
+                android:gravity="center"
+                android:textColor="#6E56CF"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Example Data Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="01/01/2024"
+                android:gravity="center"
+                android:textColor="#6E56CF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="08:00"
+                android:gravity="center"
+                android:textColor="#6E56CF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="16:00"
+                android:gravity="center"
+                android:textColor="#6E56CF" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_gravity="center"
+        android:backgroundTint="#6E56CF"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp" />
 </LinearLayout>

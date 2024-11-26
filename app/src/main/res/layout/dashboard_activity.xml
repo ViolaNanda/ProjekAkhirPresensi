@@ -30,6 +30,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal">
 
+        <!-- Tombol Presensi Masuk -->
         <Button
             android:id="@+id/btn_checkin"
             android:layout_width="0dp"
@@ -38,8 +39,9 @@
             android:backgroundTint="#6A1B9A"
             android:text="PRESENSI MASUK"
             android:textColor="#FFFFFF"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="12dp" /> <!-- Menambahkan margin end -->
 
+        <!-- Tombol Presensi Pulang -->
         <Button
             android:id="@+id/btn_checkout"
             android:layout_width="0dp"
@@ -48,8 +50,9 @@
             android:backgroundTint="#9C27B0"
             android:text="PRESENSI PULANG"
             android:textColor="#FFFFFF"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="12dp" /> <!-- Menambahkan margin start -->
     </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_attendance_history"

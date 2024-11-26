@@ -59,12 +59,13 @@
             android:layout_marginTop="12dp"
             android:hint="Password"
             app:endIconMode="password_toggle"
-            app:passwordToggleTint="@color/colorPrimary">
+            app:passwordToggleTint="#6A1B9A">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:padding="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
