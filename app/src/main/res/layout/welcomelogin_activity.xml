@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="356dp"
-            android:layout_height="314dp"
+            android:layout_width="289dp"
+            android:layout_height="272dp"
             app:srcCompat="@drawable/welcome" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:hint="Nama Lengkap"
             android:drawableStart="@drawable/user"
-            android:padding="12dp"
+            android:padding="12dp"/>
 
         <EditText
             android:id="@+id/et_email"
@@ -84,6 +84,12 @@
             android:backgroundTint="#9C27B0"
             android:textColor="#FFFFFF"
             android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_forgotpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password" />
 
     </LinearLayout>
 </ScrollView>

@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Dashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Aksi saat tombol Presensi Masuk diklik
-                Intent intent = new Intent(MainActivity.this, CheckInActivity.class);
+                Intent intent = new Intent(Dashboard.this, PresensiMasuk.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Aksi saat tombol Presensi Pulang diklik
-                Intent intent = new Intent(MainActivity.this, CheckOutActivity.class);
+                Intent intent = new Intent(Dashboard.this, PresensiPulang.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Aksi saat tombol Riwayat Kehadiran diklik
-                Intent intent = new Intent(MainActivity.this, AttendanceHistoryActivity.class);
+                Intent intent = new Intent(Dashboard.this, Riwayat.class);
                 startActivity(intent);
             }
         });
