@@ -18,7 +18,7 @@ class PresensiMasuk extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcomelogin_activity);
+        setContentView(R.layout.presensimasuk_activity);
 
         // Tombol kamera
         ImageButton btnCamera = findViewById(R.id.btn_camera);
